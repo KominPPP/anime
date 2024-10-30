@@ -22,8 +22,10 @@ const detailData = () => {
     const titleBlock = document.querySelector(".anime__details__title h3");
     const subTitleBlock = document.querySelector(".anime__details__title span");
     const descriptionBlock = document.querySelector(".anime__details__text p");
-    const widgetList = document.querySelector(".anime__details__widget ul il");
-    const breadcrump = document.querySelector(".breadcrump__links span");
+    const widgetList = document.querySelectorAll(
+      ".anime__details__widget ul li"
+    );
+    const breadcrump = document.querySelector(".breadcrumb__links span");
 
     if (animeObj) {
       imageBlock.dataset.setbg = animeObj.image;
